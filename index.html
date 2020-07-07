@@ -9,14 +9,18 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
   </head>
   <body>
-    <a-scene  vr-mode-ui="enabled: false"
+    <a-scene
+      vr-mode-ui="enabled: false"
       embedded
-      arjs="sourceType: webcam; debugUIEnabled: false;">
+      arjs="sourceType: webcam; debugUIEnabled: false;"
+    >
       <!-- Lista de assets 3D -->
       <a-assets>
-        
-        <img id="tv4-texture" src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Flogo%201024.png?v=1593624540711">
-        
+        <img
+          id="tv4-texture"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Flogo%201024.png?v=1593624540711"
+        />
+
         <img
           id="sky"
           src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Fsky.jpg?v=1592856758577"
@@ -27,7 +31,7 @@
         ></a-asset-item>
         <a-asset-item
           id="tetera"
-          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Ftetera.glb?v=1592608757311"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Ftetera.glb?v=1594150545974"
         ></a-asset-item>
         <a-asset-item
           id="ufo"
@@ -41,7 +45,7 @@
           id="globo_happy"
           src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Fglobo_happy.glb?v=1593040959100"
         ></a-asset-item>
-      <a-asset-item
+        <a-asset-item
           id="betito"
           src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2FAnyConv.com__new_betito%20(1).glb?v=1593907853491"
         ></a-asset-item>
@@ -53,8 +57,6 @@
           id="pato"
           src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2FAnyConv.com__GloboPato5.glb?v=1593722067462"
         ></a-asset-item>
-        
-        
       </a-assets>
       <!-- Lista de assets 3D -->
 
@@ -65,12 +67,11 @@
         animation="property: rotation; to:0 360 0; dur:200000; loop: true; easing: linear"
       >
         <a-gltf-model
-          shadow="receive: true"
+          shadow="receive: false"
           gltf-model="#burger"
-          scale="0.8 0.8 0.8"
-          position="0 1 -7"
-          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 50000; easing: linear;"
-          animation__position1="property: position; from:0 1 -7; to:0 1.3 -7; loop: true; dur: 3500; easing: easeInOutQuad; dir:alternate;"
+          scale="0.05 0.05 0.05"
+          position="0 1.5 -1"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
         >
         </a-gltf-model>
       </a-entity>
@@ -81,12 +82,11 @@
         animation="property: rotation; to:0 360 0; dur:200000; loop: true; easing: linear"
       >
         <a-gltf-model
-          shadow="receive: true"
+          shadow="receive: false"
           gltf-model="#tetera"
-          scale="1 1 1"
-          position="0 4.25 10"
-          animation__rotation="property: rotation; to:0 -360 0; loop: true; dur: 50000; easing: linear;"
-          animation__position1="property: position; from:0 4.25 10; to:0 4.8 10; loop: true; dur: 3500; easing: easeInOutQuad; dir:alternate;"
+          scale="0.1 0.1 0.1"
+          position="2 2 -2"
+          animation__rotation="property: rotation; to:0 -360 0; loop: true; dur: 70000; easing: linear;"
         >
         </a-gltf-model>
       </a-entity>
@@ -97,108 +97,102 @@
         animation="property: rotation; to:0 -360 0; dur:300000; loop: true; easing: linear"
       >
         <a-gltf-model
-          shadow="receive: true"
+          shadow="receive: false"
           gltf-model="#ufo"
-          scale="1 1 1"
-          position="22 -1.25 0"
-          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 50000; easing: linear;"
-          animation__position1="property: position; from:22 -1.25 0; to:22 -2 0; loop: true; dur: 3500; easing: easeInOutQuad; dir:alternate;"
+          scale="0.02 0.02 0.02"
+          position="2 1 0"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
         >
         </a-gltf-model>
       </a-entity>
       <!-- UFO -->
-      
+
       <!-- Globo amarillo -->
       <a-entity
         animation="property: rotation; to:0 -360 0; dur:300000; loop: true; easing: linear"
       >
         <a-gltf-model
-          shadow="receive: true"
+          shadow="receive: false"
           gltf-model="#globo_amarillo"
-          scale="1 1 1"
-          position="-25 5.25 0"
-          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 50000; easing: linear;"
-          animation__position1="property: position; from:-25 5.25 0; to:-25 5 0; loop: true; dur: 3500; easing: easeInOutQuad; dir:alternate;"
+          scale="0.03 0.03 0.03"
+          position="-1 1.7 0"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
+          
         >
         </a-gltf-model>
       </a-entity>
       <!-- Globo amarillo -->
-      
+
       <!-- Globo happy -->
       <a-entity
         animation="property: rotation; to:0 360 0; dur:300000; loop: true; easing: linear"
       >
         <a-gltf-model
-          shadow="receive: true"
+          shadow="receive: false"
           gltf-model="#globo_happy"
-          scale="2 2 2"
-          position="25 6 20"
-          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 50000; easing: linear;"
-          animation__position1="property: position; from:-25 6 20; to:-25 6.25 20; loop: true; dur: 3500; easing: easeInOutQuad; dir:alternate;"
+          scale="0.05 0.05 0.05"
+          position="1 1 0"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
+          
         >
         </a-gltf-model>
       </a-entity>
       <!-- Globo happy -->
-    
-    <!-- Betito -->
+
+      <!-- Betito -->
       <a-entity
         animation="property: rotation; to:0 360 0; dur:300000; loop: true; easing: linear"
       >
         <a-gltf-model
-          shadow="receive: true"
+          shadow="receive: false"
           gltf-model="#betito"
-          scale="1 1 1"
-          position="20 -2 15"
-          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 50000; easing: linear;"
-          animation__position1="property: position; from:-20 -2 15; to:-20 -2.5 15; loop: true; dur: 3500; easing: easeInOutQuad; dir:alternate;"
+          scale="0.05 0.05 0.05"
+          position="0 1 2"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
         >
         </a-gltf-model>
       </a-entity>
       <!-- Betito -->
-      
+
       <!-- Robot -->
       <a-entity
-        animation="property: rotation; to:0 -360 0; dur:200000; loop: true; easing: linear"
+        animation="property: rotation; to:0 -360 0; dur:300000; loop: true; easing: linear"
       >
         <a-gltf-model
-          shadow="receive: true"
+          shadow="receive: false"
           gltf-model="#robot"
-          scale="1 1 1"
-          position="15 3 -17"
-          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 50000; easing: linear;"
-          animation__position1="property: position; from:15 3 -17; to:15 3.6 -17; loop: true; dur: 3500; easing: easeInOutQuad; dir:alternate;"
+          scale="0.05 0.05 0.05"
+          position="-2 1.7 -2"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
         >
         </a-gltf-model>
       </a-entity>
       <!-- Robot -->
-      
+
       <!-- Pato -->
       <a-entity
         animation="property: rotation; to:0 -360 0; dur:200000; loop: true; easing: linear"
       >
         <a-gltf-model
-          shadow="receive: true"
+          shadow="receive: false"
           gltf-model="#pato"
-          scale="2 2 2"
-          position="15 3 17"
-          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 50000; easing: linear;"
-          animation__position1="property: position; from:-15 3 17; to:-15 3.6 17; loop: true; dur: 3500; easing: easeInOutQuad; dir:alternate;"
+          scale="0.1 0.1 0.1"
+          position="1 1.5 1"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
         >
         </a-gltf-model>
       </a-entity>
       <!-- Pato -->
-      
-      
-      
+
       <a-camera rotation-reader> </a-camera>
-      
+
       <a-plane
         position="0 0 0"
         rotation="-90 0 0"
         color="#7BC8A4"
         height="3"
         width="3"
-       opacity="0.5"
+        opacity="0.5"
       ></a-plane>
     </a-scene>
   </body>
