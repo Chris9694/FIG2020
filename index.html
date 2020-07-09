@@ -16,10 +16,6 @@
     >
       <!-- Lista de assets 3D -->
       <a-assets>
-        <img
-          id="tv4-texture"
-          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Flogo%201024.png?v=1593624540711"
-        />
 
         <img
           id="sky"
@@ -55,7 +51,15 @@
         ></a-asset-item>
         <a-asset-item
           id="pato"
-          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2FAnyConv.com__GloboPato5.glb?v=1593722067462"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2FAnyConv.com__GloboPato8.glb?v=1594334753835"
+        ></a-asset-item>
+        <a-asset-item
+          id="tortuga"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Fnew_tortuga.glb?v=1594238069384"
+        ></a-asset-item>
+        <a-asset-item
+          id="tv4"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Ftv4-4.glb?v=1594333573488"
         ></a-asset-item>
       </a-assets>
       <!-- Lista de assets 3D -->
@@ -69,7 +73,7 @@
         <a-gltf-model
           shadow="receive: false"
           gltf-model="#burger"
-          scale="0.05 0.05 0.05"
+          scale="0.06 0.06 0.06"
           position="0 1.5 -1"
           animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
         >
@@ -84,7 +88,7 @@
         <a-gltf-model
           shadow="receive: false"
           gltf-model="#tetera"
-          scale="0.1 0.1 0.1"
+          scale="0.2 0.2 0.2"
           position="2 2 -2"
           animation__rotation="property: rotation; to:0 -360 0; loop: true; dur: 70000; easing: linear;"
         >
@@ -99,8 +103,8 @@
         <a-gltf-model
           shadow="receive: false"
           gltf-model="#ufo"
-          scale="0.02 0.02 0.02"
-          position="2 1 0"
+          scale="0.03 0.03 0.03"
+          position="3 1 0"
           animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
         >
         </a-gltf-model>
@@ -114,7 +118,7 @@
         <a-gltf-model
           shadow="receive: false"
           gltf-model="#globo_amarillo"
-          scale="0.03 0.03 0.03"
+          scale="0.06 0.06 0.06"
           position="-1 1.7 0"
           animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
           
@@ -130,8 +134,8 @@
         <a-gltf-model
           shadow="receive: false"
           gltf-model="#globo_happy"
-          scale="0.05 0.05 0.05"
-          position="1 1 0"
+          scale="0.1 0.1 0.1"
+          position="1 0.8 0"
           animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
           
         >
@@ -146,7 +150,7 @@
         <a-gltf-model
           shadow="receive: false"
           gltf-model="#betito"
-          scale="0.05 0.05 0.05"
+          scale="0.08 0.08 0.08"
           position="0 1 2"
           animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
         >
@@ -161,7 +165,7 @@
         <a-gltf-model
           shadow="receive: false"
           gltf-model="#robot"
-          scale="0.05 0.05 0.05"
+          scale="0.07 0.07 0.07"
           position="-2 1.7 -2"
           animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
         >
@@ -171,18 +175,48 @@
 
       <!-- Pato -->
       <a-entity
-        animation="property: rotation; to:0 -360 0; dur:200000; loop: true; easing: linear"
+        animation="property: rotation; to:0 360 0; dur:2000000; loop: true; easing: linear"
       >
         <a-gltf-model
           shadow="receive: false"
           gltf-model="#pato"
           scale="0.1 0.1 0.1"
-          position="1 1.5 1"
+          position="-1 1.5 1"
           animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
         >
         </a-gltf-model>
       </a-entity>
       <!-- Pato -->
+      
+      <!-- Tortuga -->
+      <a-entity
+        animation="property: rotation; to:0 360 0; dur:200000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: false"
+          gltf-model="#tortuga"
+          scale="0.05 0.05 0.05"
+          position="1 1.6 -0.5"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Tortuga -->
+      
+      <!-- Tv4 -->
+      <a-entity
+        animation="property: rotation; to:0 360 0; dur:3000000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: false"
+          gltf-model="#tv4"
+          scale="0.01 0.01 0.01"
+          position="-0.2 1.65 0.3"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 70000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Tv4 -->
 
       <a-camera rotation-reader> </a-camera>
 
